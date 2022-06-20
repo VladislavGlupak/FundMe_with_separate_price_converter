@@ -6,3 +6,28 @@
 4. Hit `Deploy`
 
 For a more in depth blog on working with remix, [read here](https://docs.chain.link/docs/deploy-your-first-contract/)
+
+Fallback and receive functions
+
+```
+fallback() external payable {
+        
+    }
+
+    receive() external payable {
+        
+    }
+```
+
+Using library
+
+```
+contract FundMe {
+    using PriceConverter for uint256;
+...
+```
+```
+library PriceConverter {
+...
+```
+
